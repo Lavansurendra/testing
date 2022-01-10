@@ -1,0 +1,14 @@
+Game Night! The home team just won the championship! In honour of this they’ve donated $10 000 to the city to spend as they see fit. What will you do with the money?
+a. Open a new stadium for the team to play in
+b. Donate the money to environmentally friendly charities
+c. Spend the money to build a new oil pipeline 
+d. Use the money to build environmentally friendly ecosystems in national parks 
+amounts
+0
+0
+-5
+0
+20
+0
+-10
+0

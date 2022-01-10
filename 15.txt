@@ -1,0 +1,14 @@
+Sustainable Life, a company made of activists, would like to work on a project to establish rooftop gardens atop every large building in the city. They require funding of $12 000 to do so, will you allow the project to continue?
+a. Yes, This will be great for the city 
+b. I don’t have the money to spend, I can’t let this go forward
+c. I wish i could help but there are more pressing issues to deal with
+d. Instead I’d like to put a solar plant on the rooftops (-$15 000)
+amounts
+-15
+-12000
+0
+0
+0
+0
+-5
+-15000

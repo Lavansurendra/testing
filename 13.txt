@@ -1,0 +1,14 @@
+The local school needs new books but you don’t have the funds! What do you do
+a. Invest in new textbooks, its for the students 
+b. Invest in an online textbook platform  
+c. Let students use old textbooks, they can get new ones next year
+d. Hold a fundraiser 
+amounts
+0
+-10000
+-1
+-5000
+-1
+0
+0
+500

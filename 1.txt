@@ -1,0 +1,14 @@
+A forest fire has broken out, but the winds are going away from the city and further into the forest. What will you do?
+a. Send reinforcements to fight the fires 
+b. Leave the fire to the governments of other cities and countries 
+c. Reduce the fires spread to only half the forest 
+d. Pray for rain 
+amounts
+-10
+10000
+10
+0
+5
+5000
+10
+0

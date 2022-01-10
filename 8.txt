@@ -1,0 +1,14 @@
+The city wants to remove the community arts center due to lack of funding. As the land planner you have the final say. What do you feel is best?
+a. Keep the center! The arts matter 
+b. Replace the center with a snack store! 
+c. Think about it next year 
+d. Hold a fundraiser to help out!
+amounts
+0
+-10000
+5
+1000
+0
+-1000
+0
+3000

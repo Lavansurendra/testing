@@ -1,0 +1,14 @@
+A new mayor is running in town who pledges to reduce emissions by half if he wins, how will you respond?
+a. Pledge $100 000 into reducing the emissions by 55% 
+b. Pledge $10 000 into finding out the realism of his plans
+c. Prove that he is wrong and that is not possible
+d. Ignore him, he’s not better than you
+amounts
+-55
+-10000
+0
+-10000
+5
+0
+5
+0

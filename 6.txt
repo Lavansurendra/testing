@@ -1,0 +1,14 @@
+You are planning the land distribution for a new community. The members all want a new plaza but the children also need a new school! What do you do?
+a. Make the plaza, it benefits the economy 
+b. Build the school 
+c. Build an amusement park (not needed but fun!) 
+d. Have a vote! 
+amounts
+5
+10000
+0
+-10000
+10
+-10000
+0
+5000

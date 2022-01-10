@@ -1,0 +1,14 @@
+Local Shelters are at full capacity and more and more people are being forced to instead live on the streets, how will you stop this crisis!
+a. Open pop-up shelters around the city 
+b. Expand existing shelters 
+c. Open up existing community centers as shelters 
+d. Do nothing instead.
+amounts
+0
+-10000
+0
+-10000
+0
+0
+0
+0
