@@ -146,7 +146,7 @@ int main()
 
       string line;
       fstream currentfile;
-      currentfile.open(filename);
+      currentfile.open("data/"+filename);
       if (currentfile.is_open())
       {
         int counter = 0;
