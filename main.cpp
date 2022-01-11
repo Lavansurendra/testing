@@ -21,7 +21,7 @@ void Rules()
 {
   // function to read out all of the rules
   cout << endl;
-  cout << "\033[42;30m Here's how to play!" << endl;
+  cout << "\033[47;30m Here's how to play!" << endl;
   usleep(1050000);
   cout << "To start, select a difficulty level." << endl;
   usleep(1050000);
@@ -46,17 +46,17 @@ int main()
   int cash;
   int emissions;
   int difficulty;
-  cout << "\033[42;30m Good Day! Welcome to the Urban City Planner!\n In this game you will act as a City Planner and be faced with many situations and dillemas which you must solve!\n Are you ready for the responsibility of a whole city? [yes/no]\033[0m" << endl;
+  cout << "\033[47;30m Good Day! Welcome to the Urban City Planner!\n In this game you will act as a City Planner and be faced with many situations and dillemas which you must solve!\n Are you ready for the responsibility of a whole city? [yes/no]\033[0m" << endl;
   cin >> running;
   if ((running == "yes") || (running == "Yes"))
   {
-    cout << "\033[42;30m Would you like to hear the rules? [yes/no]\033[0m" << endl;
+    cout << "\033[47;30m Would you like to hear the rules? [yes/no]\033[0m" << endl;
     cin >> rules;
     if ((rules == "yes") || (rules == "Yes"))
     {
       Rules();
     }
-    cout << "\033[42;30m What difficulty level would you like to start with? Easy = 1, Medium = 2, Hard = 3\033[0m" << endl;
+    cout << "\033[47;30m What difficulty level would you like to start with? Easy = 1, Medium = 2, Hard = 3\033[0m" << endl;
     cin >> difficulty;
     switch (difficulty)
     {
@@ -78,7 +78,7 @@ int main()
     }
     system("clear");
     usleep(1050000);
-    cout << "\033[42;30m Current Emmisions: " << emissions << "%" << endl;
+    cout << "\033[47;30m Current Emmisions: " << emissions << "%" << endl;
     usleep(1050000);
     cout << "Current Cash: $" << cash << endl;
     usleep(1050000);
@@ -226,7 +226,7 @@ int main()
           break;
         }
         usleep(1050000);
-        cout << "\033[42;30m Current Emmisions: " << emissions << "%" << endl;
+        cout << "\033[47;30m Current Emmisions: " << emissions << "%" << endl;
         usleep(1050000);
         cout << "Current Cash: $" << cash << endl;
         usleep(1050000);
@@ -236,9 +236,11 @@ int main()
 
     }
     if(round == 20){
-      cout << "Congratulations, you defeated all of this games challenges while keeping emissions down and still having money leftover." << endl;
-      
+      cout << "Congratulations, you defeated all of this game's challenges while keeping emissions down and still having money leftover." << endl;
+    }else{
+      cout << "You failed to save the city" <<endl;
     }
+
  
   }
   return 0;
