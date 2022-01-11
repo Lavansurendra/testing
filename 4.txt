@@ -1,8 +1,8 @@
 How many trees do you pledge to plant in the next 10 years?
-a. 1000 
-b. 2000 
-c. 5000 
-d. 10000 
+a. 1000 (-$5000)
+b. 2000 (-$10000)
+c. 5000 (-$25000)
+d. 10000 (-$50000)
 amounts
 0
 -5000

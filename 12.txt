@@ -1,8 +1,8 @@
 Lately a lot of homes have been throwing out electronics ineffectively. This is causing a huge problem to local ecosystems. How do you respond?
-a. Set up a recycling center 
-b. Plant trees to offset the effects
+a. Set up a recycling center (-$1000)
+b. Plant trees to offset the effects (-$1000)
 c. Start fining citizens who get caught 
-d. All of the above 
+d. All of the above (-$10100)
 amounts
 -15
 -1000

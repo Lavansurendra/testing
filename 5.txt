@@ -5,7 +5,7 @@ c. Prove that he is wrong and that is not possible
 d. Ignore him, he’s not better than you
 amounts
 -55
--10000
+-100000
 0
 -10000
 5

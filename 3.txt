@@ -1,6 +1,6 @@
 An architect brings forward a plan to you which would allow for the building of 4 electric charging car parks within high traffic areas of the city for the cost of $100 000. What will you do?
 a. accept the plan and start construction 
-b. Reduce the number of car parks to two 
+b. Reduce the number of car parks to two (-$50000)
 c. Cancel the plan to save money for disasters  
 
 amounts

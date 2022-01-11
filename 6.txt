@@ -1,8 +1,8 @@
 You are planning the land distribution for a new community. The members all want a new plaza but the children also need a new school! What do you do?
-a. Make the plaza, it benefits the economy 
-b. Build the school 
-c. Build an amusement park (not needed but fun!) 
-d. Have a vote! 
+a. Make the plaza, it benefits the economy (+$10000)
+b. Build the school (-$10000)
+c. Build an amusement park (not needed but fun!) (-$10000) 
+d. Have a vote! (-$1000)
 amounts
 5
 10000
@@ -11,4 +11,4 @@ amounts
 10
 -10000
 0
-5000
+-1000

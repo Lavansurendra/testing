@@ -1,7 +1,7 @@
 Protests are occurring in the city due to the Black Lives Matter movement, and they are asking for reform in the government. What will you do?
 a. Go to the protest and hear them out
 b. Do nothing, just let it blow over
-c. Call the police to protect areas of interest and keep protesters back
+c. Call the police to protect areas of interest and keep protesters back (-$5000)
 
 amounts
 0

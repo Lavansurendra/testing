@@ -1,8 +1,8 @@
 The local homeless shelter is becoming overcrowded! As a land planner how do you respond?
-Build a new one 
-Find space for an employment center 
-Use funds to build a mall in order to impress voters 
-Both a and b
+a. Build a new one (-$50000)
+b. Find space for an employment center (-$50000)
+c. Use funds to build a mall in order to impress voters (-$50000)
+d. Both a and b (-$100000)
 amounts
 2
 -50000
