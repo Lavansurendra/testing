@@ -25,11 +25,11 @@ void Rules()
   usleep(1050000);
   cout << "To start, select a difficulty level." << endl;
   usleep(1050000);
-  cout << "Easy level starts with $200 000 and 10 percent emmisions" << endl;
+  cout << "Easy level starts with $50 000 and 60 percent emmisions" << endl;
   usleep(1050000);
-  cout << "Medium level starts with $100 000 and 20 percent emmisions" << endl;
+  cout << "Medium level starts with $25 000 and 70 percent emmisions" << endl;
   usleep(1050000);
-  cout << "Hard level starts with $50 000 and 30 percent emmisions" << endl;
+  cout << "Hard level starts with $10 000 and 80 percent emmisions" << endl;
   usleep(1050000);
   cout << "Then, you will be asked questions to test your skill at city planning" << endl;
   usleep(1050000);
@@ -61,18 +61,18 @@ int main()
     switch (difficulty)
     {
     case 1:
-      cash = 200000;
-      emissions = 10;
+      cash = 50000;
+      emissions = 60;
       cout << "Starting Cash value: $200 000, Emissions 10%" << endl;
       break;
     case 2:
-      cash = 100000;
-      emissions = 20;
+      cash = 25000;
+      emissions = 70;
       cout << "Starting Cash value: $100 000, Emissions 20%" << endl;
       break;
     case 3:
-      cash = 50000;
-      emissions = 30;
+      cash = 10000;
+      emissions = 80;
       cout << "Starting Cash value: $50 000, Emissions 30%" << endl;
       break;
     }
@@ -237,8 +237,12 @@ int main()
     }
     if(round == 20){
       cout << "Congratulations, you defeated all of this game's challenges while keeping emissions down and still having money leftover." << endl;
+      usleep(1050000);
+      cout << "Thanks for playing" <<endl;
     }else{
-      cout << "You failed to save the city" <<endl;
+      cout << "You failed to save the city." <<endl;
+      usleep(1050000);
+      cout << "Thanks for playing" <<endl;
     }
 
  

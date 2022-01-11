@@ -1,14 +1,14 @@
-The opposition is asking for you to step down! They say you are poor at managing carbon emissions and keeping the cities money. How will you respond?
-a. Show how much carbon emissions have changed since your arrival 
-b. Show the amount of money you’ve saved, compared to the amount you started with
-c. Do nothing, maybe they’re right
-d. Step down :(
+An environmental engineer brings you a new idea to help reduce emissions that is totally free of charge, however it has a 50% chance of causing more damage to the environment. Are you willing to take that chance?
+a. Yes, the risk is worth it for the chance to help the environment
+b. No, I don't want to do more harm, emmissions are high enough as it is
+c. Yes, i'll do it because it's free and worth it
+d. No this must be too good to be true
 amounts
+25
 0
 0
 0
-0
-0
+-25
 0
 0
 0
