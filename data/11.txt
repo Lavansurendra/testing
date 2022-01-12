@@ -1,11 +1,11 @@
 The mayor has promised to reduce emissions this year without raising taxes. However, he has fallen a bit short of this goal. Now the responsibility has fallen upon you! What do you do to help the environment and please your boss?
-a. Set up a bike to work/school initiative ($1000)
+a. Set up a bike to work/school initiative (-$1000)
 b. Provide solar panels tax credits (-$10000)
 c. Plant trees 1000 (-$500)
 d. All of the above(-$9500)
 amounts
 -5
-1000
+-1000
 -10
 -10000
 -2

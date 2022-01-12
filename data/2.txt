@@ -1,10 +1,14 @@
 A new green initiative is brought before you, which will cost $50 000 to the government but will reduce carbon emissions by 10%, what will you do?
-a. Pass the initiative (-10%)
-b. Eliminate the initiative (+5%)
-
-
+a. Pass the initiative 
+b. Eliminate the initiative 
+c. I don't have the money to worry about this, so we'll shut it down
+d. The emmissions are low enough already, I'll save the money for later
 amounts
 -10
-50000
--5
+-50000
+5
+0
+5
+0
+5
 0

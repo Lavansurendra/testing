@@ -2,11 +2,13 @@ A fire has started spreading across the entire community, leaving many without a
 a. Put out the fires as soon as possible and pay for them to live in hotels (-$10 000) 
 b. The insurance companies will take care of them, focus on the fires (-$5 000)
 c. Plan a new set of homes to go down in that area (-$10 000)
-
+d. Start a help the homeless campaign (-$10 000)
 amounts
 -5
 -10000
 0
 -5000
+5
+-10000
 5
 -10000

@@ -2,7 +2,7 @@ Protests are occurring in the city due to the Black Lives Matter movement, and t
 a. Go to the protest and hear them out
 b. Do nothing, just let it blow over
 c. Call the police to protect areas of interest and keep protesters back (-$5000)
-
+d. Make a press announcement announcing your new changes to the police force
 amounts
 0
 0
@@ -10,3 +10,5 @@ amounts
 0
 0
 -5000
+0
+0

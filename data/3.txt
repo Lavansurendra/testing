@@ -2,7 +2,7 @@ An architect brings forward a plan to you which would allow for the building of 
 a. accept the plan and start construction 
 b. Reduce the number of car parks to two (-$50000)
 c. Cancel the plan to save money for disasters  
-
+d. Reduce the number of car parks to one ($25000)
 amounts
 -20
 -100000
@@ -10,3 +10,5 @@ amounts
 -50000
 5
 0
+-5
+-25000
