@@ -18,7 +18,7 @@ void Rules()
   usleep(4000000);
   cout << "Hard level starts with $50 000 and 80 percent emmisions" << endl;
   usleep(4000000);
-  cout << "Then, you will be asked questions to test your skill at city planning" << endl;
+  cout << "Then, you will be asked questions to test your skill at city planning. type a, b, c or d to select one of the four options" << endl;
   usleep(4000000);
   cout << "Each answer will affect your total emissions and money earned, and if you run out of money or emissions reaches 100% you will lose!" << endl;
   usleep(8000000);

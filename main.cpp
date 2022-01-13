@@ -23,18 +23,41 @@ int main()
   //Starting the game if the user is ready 
   cout << "\033[47;30m Good Day! Welcome to the Urban City Planner!\n In this game you will act as a City Planner and be faced with many situations and dillemas which you must solve!\n Are you ready for the responsibility of a whole city? [yes/no]\033[0m" << endl;
   cin >> running;
+  while ((running != "yes") && (running != "Yes") && (running != "No") && (running != "no"))
+  {
+    // This loop asks user to re enter their response incase their response is invalid
+    cout << "\033[47;30mInvalid response, please enter either yes or no\033[0m" << endl;
+    cin >> running;
+  }
   if ((running == "yes") || (running == "Yes"))
   {
     // Asking the players if they want to read the rules and calling the Rules function if they do 
     cout << "\033[47;30m Would you like to hear the rules? [yes/no]\033[0m" << endl;
     cin >> rules;
+    while ((rules != "yes")&& (rules!= "Yes")&& (rules!= "No") && (rules!= "no"))
+    {
+      // This loop asks user to re enter their response incase their response is invalid
+      cout << "\033[47;30mInvalid response, please enter either yes or no\033[0m" << endl;
+      cin >> rules;
+    }
+    
     if ((rules == "yes") || (rules == "Yes"))
     {
       Rules();
     }
     //Having the user select a difficulty level and adjusting the cash and emmisions values accordingly 
-    cout << "\033[47;30m What difficulty level would you like to start with? Easy = 1, Medium = 2, Hard = 3\033[0m" << endl;
+    cout << "\033[47;30m What difficulty level would you like to start with? Easy = 1, Medium = 2, Hard = 3 Choose your own difficulty = 4 \033[0m" << endl;
     cin >> difficulty;
+
+    while (((difficulty!=1) && (difficulty!=2) && (difficulty!=3) && (difficulty!=4)) || cin.fail())
+    {
+      //this loop asks the user to re enter a reponse incase they respond with an invalid one
+      cout << "\033[47;30mInvalid response, please enter either 1,2,3 or 4 \033[0m" << endl;
+      cin.clear();
+      cin.ignore(256,'\n');
+      cin >> difficulty;
+    }
+    // Adjusting cash and emissions according to selected difficulty level 
     switch (difficulty)
     {
     case 1:
@@ -52,9 +75,34 @@ int main()
       emissions = 80;
       cout << "Starting Cash value: $10 000, Emissions 80%" << endl;
       break;
+    case 4:
+    // taking input of the users choice of cash and emissions if they select the choose your own option
+      cout << "Enter a cash value to start with (must be a number > 0 i.e. (100000)" << endl; 
+      cin >> cash;
+      // while loop to prompt them to re enter a cash value if their original reponse was invalid
+      while ((cash<=0) || (cin.fail()))
+      {
+        cout << "Please enter a number which is greater than 0" << endl;
+        cin.clear();
+        cin.ignore(256, '\n');
+        cin >> cash;
+      }
+      cout << "Enter a emissions value to start with (must be a number >0 and <100)" << endl;
+      cin >> emissions;
+      // while loop to prompt them to re enter an emmissions value if their original reponse was invalid
+      while ((emissions < 0) || (emissions > 100) || (cin.fail()))
+      {
+        cout << "Please enter a number which is greater than 0 and less than 100" << endl;  
+        cin.clear();
+        cin.ignore(256, '\n');
+        cin >> emissions; 
+      }
+      cout <<"Starting Cash value: $" << cash <<", Emissions " << emissions <<"%" << endl;
+
+
     }
     //printing out current emmissions and cash
-    usleep(1000000);
+    usleep(3000000);
     system("clear");
     usleep(1000000);
     cout << "\033[47;30m Current Emmisions: " << emissions << "%" << endl;
@@ -72,7 +120,7 @@ int main()
     int demissions;
     int dcost;
     //Variable to keep track of how many rounds have completed
-    int round = 0;
+    int round = 1;
     // Boolean used to keep track of if a question hasn't been found yet
     bool questionNotFound = true;
     // String to keep track of the file name selected by the random function
