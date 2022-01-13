@@ -1,146 +1,15 @@
+// library which allows for input and output to the console
 #include <iostream>
-#include <sstream>
+// library which allows for string variables to be made
 #include <string>
+// library which helps to pause for a certain amount of time before the next command
 #include <unistd.h>
-#include <stdlib.h>
+// library which allows code to interact with text files
 #include <fstream>
-#include <cstdlib>
+#include "textfunc.h"
+#include "randomfunc.h"
 using namespace std;
 
-string generateRandomQuestion()
-{
-  srand((unsigned)time(0));
-  int result = 1 + (rand() % 20);
-  usleep(1000);
-  stringstream ss;
-  ss << result;
-  string str = ss.str();
-  return str + ".txt";
-}
-void Rules()
-{
-  // function to read out all of the rules, spaced out by pauses to prevent users from being overwhelmed by a block of text
-  cout << endl;
-  cout << "\033[47;30m Here's how to play!" << endl;
-  usleep(1500000);
-  cout << "To start, select a difficulty level." << endl;
-  usleep(2350000);
-  cout << "Easy level starts with $100 000 and 60 percent emmisions" << endl;
-  usleep(4000000);
-  cout << "Medium level starts with $80 000 and 70 percent emmisions" << endl;
-  usleep(4000000);
-  cout << "Hard level starts with $50 000 and 80 percent emmisions" << endl;
-  usleep(4000000);
-  cout << "Then, you will be asked questions to test your skill at city planning" << endl;
-  usleep(4000000);
-  cout << "Each answer will affect your total emissions and money earned, and if you run out of money or emissions reaches 100% you will lose!" << endl;
-  usleep(8000000);
-  cout << "Without further ado, lets begin!\033[0m" << endl;
-  usleep(3500000);
-  cout << endl;
-}
-
-void rollCredits(){
-  // Function which prints out a thank you and reflection piece at the end of the playthrough, along with a text based tree based off of our early lessons.
-  cout << "This project was created to test the limits of your abilities" << endl;
-  usleep(3150000);
-  cout << "The task of taking control of the future is quite difficult  " << endl;
-  usleep(4000000);
-  cout << "No matter how you did, I'm proud of you for taking that      " << endl;
-  usleep(3500000);
-  cout << "Tremendous Resposibility...                                  " << endl;
-  usleep(3000000);
-  cout << "Take some time to reflect on your successes and failures     " << endl;
-  usleep(4000000);
-  cout << "The game keeps track of both money and greenhouse emmisions  " << endl;
-  usleep(4000000);
-  cout << "But it does not keep track of your own opinions and morals   " << endl;
-  usleep(4500000);
-  cout << "Feel free to play again any time :)                          " << endl;
-  usleep(3000000);
-  cout << "                             *                               " << endl;
-  usleep(500000);
-  cout << "                            /|\\                              " << endl;               
-  usleep(500000);
-  cout << "                           /*|O\\                             " << endl;
-  usleep(500000);
-  cout << "                          /*/|\\*\\                            " << endl;
-  usleep(500000);
-  cout << "                         /X/O|*\\X\\                           " << endl;
-  usleep(500000);
-  cout << "                        /*/X/|\\X\\*\\                          " << endl;
-  usleep(500000);
-  cout << "                       /O/*/X|*\\O\\X\\                         " << endl;
-  usleep(500000);
-  cout << "                      /*/O/X/|\\X\\O\\*\\                        " << endl;
-  usleep(500000);
-  cout << "                     /X/O/*/X|O\\X\\*\\O\\                       " << endl;
-  usleep(500000);
-  cout << "                    /O/X/*/O/|\\X\\*\\O\\X\\                      " << endl;
-  usleep(500000);
-  cout << "                            |X|                              " << endl;
-  usleep(500000);
-  cout << "                            |X|                              " << endl;
-  usleep(500000);
-  cout << "                   A Game by Lavan Surendra                  \033[0m" << endl;
-  usleep(3000000);
-  cout << endl;
-  usleep(500000);
-  cout << endl;
-  usleep(500000);
-  cout << endl;
-  usleep(500000);
-  cout << endl;
-  usleep(500000);
-  cout << endl;
-  usleep(500000);
-  cout << endl;
-  usleep(500000);
-  cout << endl;
-  usleep(500000);
-  cout << endl;
-  usleep(500000);
-  cout << endl;
-  usleep(500000);
-  cout << endl;
-  usleep(500000);
-  cout << endl;
-  usleep(500000);
-  cout << endl;
-  usleep(500000);
-  cout << endl;
-  usleep(500000);
-  cout << endl;
-  usleep(500000);
-  cout << endl;
-  usleep(500000);
-  cout << endl;
-  usleep(500000);
-  cout << endl;
-  usleep(500000);
-  cout << endl;
-  usleep(500000);
-  cout << endl;
-  usleep(500000);
-  cout << endl;
-  usleep(500000);
-  cout << endl;
-  usleep(500000);
-  cout << endl;
-  usleep(500000);
-  cout << endl;
-  usleep(500000);
-  cout << endl;
-  usleep(500000);
-  cout << endl;
-  usleep(500000);
-  cout << endl;
-  usleep(500000);
-  cout << endl;
-  usleep(500000);
-  cout << endl;
-  system("clear");
-}
 
 int main()
 {
@@ -169,19 +38,19 @@ int main()
     switch (difficulty)
     {
     case 1:
-      cash = 100000;
+      cash = 50000;
       emissions = 60;
-      cout << "Starting Cash value: $100 000, Emissions 60%" << endl;
+      cout << "Starting Cash value: $50 000, Emissions 60%" << endl;
       break;
     case 2:
-      cash = 80000;
+      cash = 25000;
       emissions = 70;
-      cout << "Starting Cash value: $85 000, Emissions 70%" << endl;
+      cout << "Starting Cash value: $25 000, Emissions 70%" << endl;
       break;
     case 3:
-      cash = 50000;
+      cash = 10000;
       emissions = 80;
-      cout << "Starting Cash value: $50 000, Emissions 80%" << endl;
+      cout << "Starting Cash value: $10 000, Emissions 80%" << endl;
       break;
     }
     //printing out current emmissions and cash
@@ -193,7 +62,7 @@ int main()
     cout << "Current Cash: $" << cash << endl;
     usleep(1000000);
 
-    //Variables to store the change in emmisions of each option for every question
+    //Variables to store the change in emmisions and of each option for every question
     int aemissions;
     int acost;
     int bemissions;
@@ -231,11 +100,14 @@ int main()
         "19.txt",
         "20.txt",
     };
+    // code to ask questions until they run out or the player loses
     while ((emissions < 100) && (cash > 0) && (round!=20))
     {
-
+      // variable which keeps track of if a valid filename is found
       questionNotFound = true;
+      // Printing the current round number
       cout << "Round #" << round <<endl;
+      // variables to store the emissions and costs
       aemissions = 0;
       acost = 0;
       bemissions = 0;
@@ -245,11 +117,13 @@ int main()
       demissions = 0;
       dcost = 0;
 
+      // while loop which generates questions until a question which hasn't been asked yet is found
       while (questionNotFound)
       {
         filename = generateRandomQuestion();
         for (int i = 0; i < 20; i++)
         {
+          // use of unopened files list to determine whether a file has been visited before
           if (unopenedFiles[i] == filename)
           {
             unopenedFiles[i] = " ";
@@ -257,54 +131,66 @@ int main()
           }
         }
       }
-
+      // variables for running through lines of a file and for opening files themselves
       string line;
       fstream currentfile;
+      // command to open a file and loop through it
       currentfile.open("data/"+filename);
       if (currentfile.is_open())
       {
         int counter = 0;
         while (getline(currentfile, line))
         {
+          // Printing out the first four lines of the file (the questions)
           if (counter <= 4)
           {
             cout << line << '\n';
             usleep(3000000);
           }
+          // Storing the 6th line as an integer into the emissions change of option a 
           else if (counter == 6)
           {
             aemissions = stoi(line);
           }
+          // Storing the 7th line as an integer into the cost change of option a 
           else if (counter == 7)
           {
             acost = stoi(line);
           }
+          // Storing the 8th line as an integer into the emissions change of option b 
           else if (counter == 8)
           {
             bemissions = stoi(line);
           }
+          // Storing the 9th line as an integer into the cost change of option b 
           else if (counter == 9)
           {
             bcost = stoi(line);
           }
+          // Storing the 10th line as an integer into the emissions change of option c
           else if (counter == 10)
           {
             cemissions = stoi(line);
           }
+          // Storing the 11th line as an integer into the cost change of option c
           else if (counter == 11)
           {
             ccost = stoi(line);
           }
+          // Storing the 12th line as an integer into the emissions change of option d
           else if (counter == 12)
           {
             demissions = stoi(line);
           }
+          // Storing the 13th line as an integer into the cost change of option d
           else if (counter == 13)
           {
             dcost = stoi(line);
           }
+          // Incrementing the counter to keep track of the movement to the next line
           counter++;
         }
+        // Taking input of the users choice and running a loop if it's not a valid choice, so that they can reinput a valid option
         char choice;
         cout << "What will you do?\033[0m" << endl;
         cin >> choice;
@@ -312,6 +198,7 @@ int main()
           cout << "Invalid! please select a valid option\033[0m" << endl;
           cin >> choice;
         }
+        // Taking the users choice and adjusting the game's current emissions and cost accordingly 
         switch (choice)
         {
         case 'a':
@@ -330,8 +217,9 @@ int main()
           emissions += demissions;
           cash += dcost;
         }
+        // clearing the screen to avoid clutter
         system("clear");
-
+        // Resetting the emissions and cash values to 0 if they go into the negatives 
         if (emissions < 0)
         {
           emissions = 0;
@@ -340,6 +228,7 @@ int main()
         {
           cash = 0;
         }
+        // Incrementing the current round number and printing out the current emissions and cash before running the loop again
         round++;
         usleep(1000000);
         cout << "\033[47;30m Current Emmisions: " << emissions << "%" << endl;
@@ -351,6 +240,7 @@ int main()
       }
 
     }
+    // Congratulating the player if they've succeded or informing them if they've lost. Then calling the function to role credits
     if(round == 20){
       cout << "Congratulations, you defeated all of this game's challenges while keeping emissions down and still having money leftover." << endl;
       usleep(4000000);
