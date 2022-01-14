@@ -8,7 +8,7 @@ void Rules()
 {
   // function to read out all of the rules, spaced out by pauses to prevent users from being overwhelmed by a block of text
   cout << endl;
-  cout << "\033[47;30m Here's how to play!" << endl;
+  cout << "\033[47;30mHere's how to play!" << endl;
   usleep(1500000);
   cout << "To start, select a difficulty level." << endl;
   usleep(2350000);

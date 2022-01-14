@@ -46,13 +46,13 @@ int main()
       Rules();
     }
     //Having the user select a difficulty level and adjusting the cash and emmisions values accordingly 
-    cout << "\033[47;30m What difficulty level would you like to start with? Easy = 1, Medium = 2, Hard = 3 Choose your own difficulty = 4 \033[0m" << endl;
+    cout << "\033[47;30m What difficulty level would you like to start with? Easy = 1, Medium = 2, Hard = 3 Choose your own difficulty = 4\033[0m" << endl;
     cin >> difficulty;
 
     while (((difficulty!=1) && (difficulty!=2) && (difficulty!=3) && (difficulty!=4)) || cin.fail())
     {
       //this loop asks the user to re enter a reponse incase they respond with an invalid one
-      cout << "\033[47;30mInvalid response, please enter either 1,2,3 or 4 \033[0m" << endl;
+      cout << "\033[47;30mInvalid response, please enter either 1,2,3 or 4\033[0m" << endl;
       cin.clear();
       cin.ignore(256,'\n');
       cin >> difficulty;
@@ -63,41 +63,41 @@ int main()
     case 1:
       cash = 50000;
       emissions = 60;
-      cout << "Starting Cash value: $50 000, Emissions 60%" << endl;
+      cout << "\033[47;30mStarting Cash value: $50 000, Emissions 60%\033[0m" << endl;
       break;
     case 2:
       cash = 25000;
       emissions = 70;
-      cout << "Starting Cash value: $25 000, Emissions 70%" << endl;
+      cout << "\033[47;30mStarting Cash value: $25 000, Emissions 70%\033[0m" << endl;
       break;
     case 3:
       cash = 10000;
       emissions = 80;
-      cout << "Starting Cash value: $10 000, Emissions 80%" << endl;
+      cout << "\033[47;30mStarting Cash value: $10 000, Emissions 80%\033[0m" << endl;
       break;
     case 4:
     // taking input of the users choice of cash and emissions if they select the choose your own option
-      cout << "Enter a cash value to start with (must be a number > 0 i.e. (100000)" << endl; 
+      cout << "\033[47;30mEnter a cash value to start with (must be a number > 0 i.e. (100000)\033[0m" << endl; 
       cin >> cash;
       // while loop to prompt them to re enter a cash value if their original reponse was invalid
       while ((cash<=0) || (cin.fail()))
       {
-        cout << "Please enter a number which is greater than 0" << endl;
+        cout << "\033[47;30mPlease enter a number which is greater than 0\033[0m" << endl;
         cin.clear();
         cin.ignore(256, '\n');
         cin >> cash;
       }
-      cout << "Enter a emissions value to start with (must be a number >0 and <100)" << endl;
+      cout << "\033[47;30mEnter a emissions value to start with (must be a number >0 and <100)\033[0m" << endl;
       cin >> emissions;
       // while loop to prompt them to re enter an emmissions value if their original reponse was invalid
       while ((emissions < 0) || (emissions > 100) || (cin.fail()))
       {
-        cout << "Please enter a number which is greater than 0 and less than 100" << endl;  
+        cout << "\033[47;30mPlease enter a number which is greater than 0 and less than 100\033[0m" << endl;  
         cin.clear();
         cin.ignore(256, '\n');
         cin >> emissions; 
       }
-      cout <<"Starting Cash value: $" << cash <<", Emissions " << emissions <<"%" << endl;
+      cout <<"\033[47;30mStarting Cash value: $" << cash <<", Emissions " << emissions <<"%\033[0m" << endl;
 
 
     }
@@ -243,7 +243,7 @@ int main()
         cout << "What will you do?\033[0m" << endl;
         cin >> choice;
         while((choice!='a') && (choice!='b') &&(choice!='c') && (choice!='d')){
-          cout << "Invalid! please select a valid option\033[0m" << endl;
+          cout << "[47;30mInvalid! please select a valid option\033[0m" << endl;
           cin >> choice;
         }
         // Taking the users choice and adjusting the game's current emissions and cost accordingly 
