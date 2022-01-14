@@ -69,19 +69,19 @@ int main()
     switch (difficulty)
     {
     case 1:
-      cash = 50000;
+      cash =  100000;
       emissions = 60;
-      cout << "\033[47;30mStarting Cash value: $50 000, Emissions 60%\033[0m" << endl;
+      cout << "\033[47;30mStarting Cash value: $100 000, Emissions 60%\033[0m" << endl;
       break;
     case 2:
-      cash = 25000;
+      cash = 80000;
       emissions = 70;
-      cout << "\033[47;30mStarting Cash value: $25 000, Emissions 70%\033[0m" << endl;
+      cout << "\033[47;30mStarting Cash value: $80 000, Emissions 70%\033[0m" << endl;
       break;
     case 3:
-      cash = 10000;
+      cash = 60000;
       emissions = 80;
-      cout << "\033[47;30mStarting Cash value: $10 000, Emissions 80%\033[0m" << endl;
+      cout << "\033[47;30mStarting Cash value: $60 000, Emissions 80%\033[0m" << endl;
       break;
     case 4:
     // taking input of the users choice of cash and emissions if they select the choose your own option
