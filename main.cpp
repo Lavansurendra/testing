@@ -1,3 +1,11 @@
+/* 
+Project Title: Urban Planner
+Created by: Lavan Surendra
+This project is a game which tests the users ability to plan a city while keeping emissions down and remaining under budget.
+Users answer a series of random questions related to city planning in the hopes of winning by getting through them all
+ */
+
+
 // library which allows for input and output to the console
 #include <iostream>
 // library which allows for string variables to be made
@@ -63,41 +71,41 @@ int main()
     case 1:
       cash = 50000;
       emissions = 60;
-      cout << "Starting Cash value: $50 000, Emissions 60%" << endl;
+      cout << "\033[47;30mStarting Cash value: $50 000, Emissions 60%\033[0m" << endl;
       break;
     case 2:
       cash = 25000;
       emissions = 70;
-      cout << "Starting Cash value: $25 000, Emissions 70%" << endl;
+      cout << "\033[47;30mStarting Cash value: $25 000, Emissions 70%\033[0m" << endl;
       break;
     case 3:
       cash = 10000;
       emissions = 80;
-      cout << "Starting Cash value: $10 000, Emissions 80%" << endl;
+      cout << "\033[47;30mStarting Cash value: $10 000, Emissions 80%\033[0m" << endl;
       break;
     case 4:
     // taking input of the users choice of cash and emissions if they select the choose your own option
-      cout << "Enter a cash value to start with (must be a number > 0 i.e. (100000)" << endl; 
+      cout << "\033[47;30mEnter a cash value to start with (must be a number > 0 i.e. (100000)\033[0m" << endl; 
       cin >> cash;
       // while loop to prompt them to re enter a cash value if their original reponse was invalid
       while ((cash<=0) || (cin.fail()))
       {
-        cout << "Please enter a number which is greater than 0" << endl;
+        cout << "\033[47;30mPlease enter a number which is greater than 0\033[0m" << endl;
         cin.clear();
         cin.ignore(256, '\n');
         cin >> cash;
       }
-      cout << "Enter a emissions value to start with (must be a number >0 and <100)" << endl;
+      cout << "\033[47;30mEnter a emissions value to start with (must be a number >0 and <100)\033[0m" << endl;
       cin >> emissions;
       // while loop to prompt them to re enter an emmissions value if their original reponse was invalid
       while ((emissions < 0) || (emissions > 100) || (cin.fail()))
       {
-        cout << "Please enter a number which is greater than 0 and less than 100" << endl;  
+        cout << "\033[47;30mPlease enter a number which is greater than 0 and less than 100\033[0m" << endl;  
         cin.clear();
         cin.ignore(256, '\n');
         cin >> emissions; 
       }
-      cout <<"Starting Cash value: $" << cash <<", Emissions " << emissions <<"%" << endl;
+      cout <<"\033[47;30mStarting Cash value: $" << cash <<", Emissions " << emissions <<"%\033[0m" << endl;
 
 
     }
