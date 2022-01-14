@@ -1,3 +1,11 @@
+/* 
+Project Title: Urban Planner
+Created by: Lavan Surendra
+This project is a game which tests the users ability to plan a city while keeping emissions down and remaining under budget.
+Users answer a series of random questions related to city planning in the hopes of winning by getting through them all
+ */
+
+
 // library which allows for input and output to the console
 #include <iostream>
 // library which allows for string variables to be made
