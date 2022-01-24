@@ -5,10 +5,10 @@ c. Reduce the fires spread to only half the forest
 d. Pray for rain 
 amounts
 -10
-10000
+-10000
 10
 0
 5
-5000
+-5000
 10
 0
